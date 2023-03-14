@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+ background-color: rgb(127, 223, 127);   
+}
+.container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  10px;
+    margin-bottom: 20px;
+    font-style:bold;
+}
+.login-box{
+    background-color: rgb(132, 130, 232);
+    width: 405px;
+    height: 391px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border:2px solid rgb(148, 94, 94);
+    
+}
+
+label{
+    height: 30px;
+    margin-left: 6px;
+    margin-right: 82px;
+    margin-bottom: 14px;
+    
+    font-family: 'Arial', sans-serif;
+}
+input{
+    height: 30px;
+    width: 180px;
+    margin-bottom: 30px;
+}
+#name,#email{
+    margin-left: 30px;
+}
+#dob{
+    margin-left: -21px;
+}
+#check{
+    margin-left: 1px;
+
+}
+#acceptTerms{
+    width: 13px;
+    margin-left: -73px;
+}
+button{
+    margin-top: auto;
+    margin-left: 6px;
+    margin-bottom: 2px;
+    background-color: rgb(236, 92, 92);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+#tab1{
+    position: relative;
+    background-color: rgb(27, 108, 151);
+    padding: 10px 6px 8px 6px;
+    margin-top: 5px;
+    box-shadow: 0 25px 50px -12px rgb(98, 128, 218);
+    border-width: 1px;
+    border-color: rgb(79, 99, 160);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    
+}
+#table2{
+    margin: auto;
+}
+#table3{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+td{
+    border-width: 1px;
+    /* border-left-width: 0px; */
+    border-style: solid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-color: royalblue;
+    font-family: 'Open Sans', sans-serif;
+
+}
+th{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}

@@ -1,16 +1,16 @@
 let loginform = document.getElementById("login-form");
-const date_of_birthinput = document.getElementById('date_of_birth');
+const dobinput = document.getElementById('dob');
 
-date_of_birthinput.addEventListener('input', (event) => {
-    const date_of_birth = new Date(event.target.value);
+dobinput.addEventListener('input', (event) => {
+    const dob = new Date(event.target.value);
     const now = new Date();
-    const Age = now.getFullYear() - date_of_birth.getFullYear();
+    const age = now.getFullYear() - dob.getFullYear();
 
-    if (Age < 18 || Age > 55) {
-        date_of_birthinput.setCustomValidity('Please enter a valid date of birth between Ages 18 and 55.');
+    if (age < 18 || age > 55) {
+        dobinput.setCustomValidity('Please enter a valid date of birth between ages 18 and 55.');
     }
     else{
-        date_of_birthinput.setCustomValidity('');
+        dobinput.setCustomValidity('');
     }
 });
 
@@ -32,9 +32,9 @@ const showdetails =()=>{
         const nameCell = `<td>${entry.name}</td>`;
         const emailCell = `<td>${entry.email}</td>`;
         const passwordCell = `<td>${entry.pw}</td>`;
-        const date_of_birthCell = `<td>${entry.db}</td>`;
+        const dobCell = `<td>${entry.db}</td>`;
         const acceptTermsCell = `<td>${entry.ch}</td>`;
-        const row = `<tr>${nameCell} ${emailCell} ${passwordCell} ${date_of_birthCell} ${acceptTermsCell}</tr>`;
+        const row = `<tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>`;
         return row;
     }).join("\n");
 
@@ -44,7 +44,7 @@ const showdetails =()=>{
             <th>Name</th>
             <th>Email</th>
             <th>Password</th>
-            <th>date_of_birth</th>
+            <th>dob</th>
             <th>accepted terms?</th>
         </tr>${tableentries}
     </table>`;
@@ -57,7 +57,7 @@ const saveform = (event)=>{
     const name = document.getElementById("name").value; 
     const email = document.getElementById("email").value;
     const pw = document.getElementById("password").value;
-    const db = document.getElementById("date_of_birth").value;
+    const db = document.getElementById("dob").value;
     const ch = document.getElementById("acceptTerms").checked;
     const entry = {
         name,
@@ -74,5 +74,3 @@ const saveform = (event)=>{
 loginform.addEventListener("submit",saveform); 
 
 showdetails();
-
-

@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
- background-color: rgb(127, 223, 127);   
+ background-color: honeydew;   
 }
 .container{
     height: 500px;
@@ -19,17 +19,17 @@ h2{
     align-items: center;
     margin:  10px;
     margin-bottom: 20px;
-    font-style:bold;
+    font-style:italic;
 }
 .login-box{
-    background-color: rgb(132, 130, 232);
+    background-color: bisque;
     width: 405px;
     height: 391px;
     display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border:2px solid rgb(148, 94, 94);
+    border:2px solid black;
     
 }
 
@@ -39,7 +39,7 @@ label{
     margin-right: 82px;
     margin-bottom: 14px;
     
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 input{
     height: 30px;
@@ -64,19 +64,17 @@ button{
     margin-top: auto;
     margin-left: 6px;
     margin-bottom: 2px;
-    background-color: rgb(236, 92, 92);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    
+    background-color: black;
+    color: white;
 }
 #tab1{
     position: relative;
-    background-color: rgb(27, 108, 151);
+    background-color: royalblue;
     padding: 10px 6px 8px 6px;
     margin-top: 5px;
-    box-shadow: 0 25px 50px -12px rgb(98, 128, 218);
+    box-shadow: 0 25px 50px -12px royalblue;
     border-width: 1px;
-    border-color: rgb(79, 99, 160);
+    border-color: royalblue;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.5rem;
